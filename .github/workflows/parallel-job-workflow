@@ -1,6 +1,6 @@
 name: parallel-job-example
 'on':
-  workflow_dispatch: null
+  workflow_dispatch:
   push:
     branches:
       - main
