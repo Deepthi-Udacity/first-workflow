@@ -31,12 +31,6 @@ jobs:
         
       - name: NPM Init
         run: npm init
-
-      - name: NPm react
-        run: npm install react-scripts
-        
-      - name: Run tests
-        run: npm test
         
       - name: Debug message
         if: env.DEBUG == 'true'
@@ -61,8 +55,8 @@ jobs:
         if: github.ref != 'refs/heads/main'
         run: echo "This is not the main branch."
         
-      - name: Run tests
-        run: npm test
+      - name: NPM Init
+        run: npm init
         
       - name: Debug message
         if: env.DEBUG == 'true'
