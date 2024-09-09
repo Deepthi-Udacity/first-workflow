@@ -31,6 +31,9 @@ jobs:
         
       - name: NPM Init
         run: npm init
+
+      - name: NPm react
+        run: npm install react-scripts
         
       - name: Run tests
         run: npm test
